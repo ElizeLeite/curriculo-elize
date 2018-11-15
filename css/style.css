@@ -1,0 +1,42 @@
+/* Poderia tentar fazer isso, mas não vai funcionar.
+.card-panel{margin: 0;}
+É preciso especificar mais ainda o seu seletor para que ele tenha um 'peso' maior, como se você desse uma importância maior a sua nova regra: */
+div .card-panel { /* ajustando margem */
+  margin: 0;
+}
+/* Desse modo, agora funciona, pois foi mais especificado o seletor.
+Do modo que está ali, está reforçando que é a classe .card-panel que está dentro de uma div.
+Se fosse dado um id pra div que contém esse card, poderia ser especificado da seguinte forma:
+#header .card-panel{margin: 0;} */
+
+.fontePerso {
+	font-size: 130%;
+	text-align: center;
+}
+
+.cinza1 {
+	color: #212121;
+}
+
+.line {
+  	display: inline;
+  	vertical-align: top;
+}
+
+#cinza1 {
+	color: #212121;
+}
+
+.container { /* definindo container personalizado */
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.fixed { /* fixando nav no topo */
+	position: fixed;
+    z-index: 1000; /* sobreposição */
+}
+
+.redondo { /* arredondar borda */
+	border-radius: 10px;
+}
